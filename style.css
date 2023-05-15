@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", serif;
+}
+body {
+  background-color: rgb(20, 165, 218);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 400px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+.wrapper header {
+  font-size: 30px;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.wrapper p {
+  font-size: 20px;
+  color: rgb(94, 93, 93);
+  margin-bottom: 20px;
+}
+.wrapper .amount {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+.wrapper .amount .Min {
+  background-color: blue;
+}
+.wrapper .amount input {
+  padding: 0;
+  width: 100px;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  -moz-appearance: textfield;
+}
+.wrapper .amount input::-webkit-inner-spin-button,
+.wrapper .amount input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.slider {
+  position: relative;
+  height: 5px;
+  background: rgb(211, 210, 210);
+  margin-top: 30px;
+}
+.slider .progress {
+  position: absolute;
+  height: 5px;
+  left: 25%;
+  right: 25%;
+  background: rgb(51, 51, 232);
+}
+.range {
+  position: relative;
+}
+.range input {
+  position: absolute;
+  height: 5px;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  -webkit-appearance: none;
+  background: none;
+}
+.separatro {
+  font-size: 30px;
+}
+.range input::-webkit-slider-thumb {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: rgb(51, 51, 232);
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+.range input::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: rgb(51, 51, 232);
+  pointer-events: auto;
+  -moz-appearance: none;
+  border: none;
+}
